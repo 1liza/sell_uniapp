@@ -1,0 +1,34 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/components/index",
+			"style": {
+				"navigationBarTitleText": "index"
+			}
+		},
+		{
+			"path": "pages/components/Sellers/Sellers",
+			"style": {
+				"navigationBarTitleText": "Seller"
+			}
+		},
+		{
+			"path": "pages/components/Goods/Goods",
+			"style": {
+				"navigationBarTitleText": "Goods"
+			}
+		},
+		{
+			"path": "pages/components/Rattings/Rattings",
+			"style": {
+				"navigationBarTitleText": "Rattings"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
