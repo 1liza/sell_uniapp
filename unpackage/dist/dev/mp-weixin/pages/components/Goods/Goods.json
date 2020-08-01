@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cart": "/pages/components/Cart/Cart",
+    "food": "/pages/components/Food/Food",
+    "cartcontrol": "/pages/components/Cartcontrol/Cartcontrol"
+  }
+}

@@ -1,0 +1,214 @@
+.cart {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 50;
+}
+.cart .content {
+  background: #141d27;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+.cart .content .cart-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: rgba(255,255,255,0.4);
+}
+.cart .content .cart-left .iconwrapper {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background: #141d27;
+  margin: 0 18px;
+  box-sizing: border-box;
+  padding: 6px;
+}
+.cart .content .cart-left .iconwrapper .logo {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.cart .content .cart-left .iconwrapper .logo.highlight {
+  background: #00a0dc;
+}
+.cart .content .cart-left .iconwrapper .logo .shoppingcart {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 42px;
+}
+.cart .content .cart-left .iconwrapper .logo .shoppingcart.highlight {
+  color: #fff;
+}
+.cart .content .cart-left .iconwrapper .food-num {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  bottom: 40px;
+  left: 33px;
+  font-size: 9px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #f01414;
+  text-align: center;
+  border-radius: 8px;
+}
+.cart .content .cart-left .price {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  margin-top: 12px;
+  padding-right: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.cart .content .cart-left .price.highlight {
+  color: #fff;
+}
+.cart .content .cart-left .sendprice {
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: top;
+  margin: 12px 0 0 12px;
+  line-height: 24px;
+}
+.cart .content .cart-right {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 105px;
+          flex: 0 0 105px;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+}
+.cart .content .cart-right.highlight {
+  background: #00a0dc;
+}
+.cart .content .cart-right .total-price {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 48px;
+  height: 48px;
+  display: inline-block;
+  color: rgba(255,255,255,0.4);
+}
+.cart .content .cart-right .total-price.highlight {
+  color: #fff;
+}
+.cart .ball-container .ball {
+  position: fixed;
+  left: 32px;
+  bottom: 22px;
+  z-index: 200;
+  -webkit-transition: all 0.4s cubic-bezier(0.49, -0.29, 0.75, 0.41);
+  transition: all 0.4s cubic-bezier(0.49, -0.29, 0.75, 0.41);
+}
+.cart .ball-container .ball .inner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00a0dc;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.cart .shopcart-list {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+.cart .shopcart-list.fold-enter-active,
+.cart .shopcart-list.fold-leave-active {
+  -webkit-transition: all 0.5;
+  transition: all 0.5;
+}
+.cart .shopcart-list.fold-enter,
+.cart .shopcart-list..cart .shopcart-list.fold-leave-active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.cart .shopcart-list .list-header {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 18px;
+  background: #f3f5f7;
+  border-bottom: 1px solid rgba(7,17,27,0.1);
+}
+.cart .shopcart-list .list-header .title {
+  float: left;
+  font-size: 14px;
+  color: #07111b;
+}
+.cart .shopcart-list .list-header .empty {
+  float: right;
+  font-size: 12px;
+  color: #00a0dc;
+}
+.cart .shopcart-list .list-content {
+  padding: 0 18px;
+  max-height: 217px;
+  overflow: hidden;
+  background: #fff;
+}
+.cart .shopcart-list .list-content .food {
+  padding: 12px 0;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  height: 48px;
+  border-bottom: 1px solid rgba(7,17,27,0.1);
+}
+.cart .shopcart-list .list-content .food .name {
+  display: inline-block;
+  font-size: 14px;
+  color: #07111b;
+  line-height: 24px;
+}
+.cart .shopcart-list .list-content .food .price {
+  position: absolute;
+  right: 90px;
+  bottom: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f01414;
+}
+.cart .shopcart-list .list-content .food .cartcontrol-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+}
+.list-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: 1;
+  background: rgba(7,17,27,0.6);
+}
+.list-mask.fade-enter-active,
+.list-mask.fade-leave-active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.list-mask.fade-enter,
+.list-mask.fade-leave-to {
+  opacity: 0;
+}
+

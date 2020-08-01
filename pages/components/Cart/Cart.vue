@@ -121,9 +121,13 @@ export default {
       while (count--) {
         const ball = this.balls[count]
         if (ball.show) {
-          const rect = ball.el.getBoundingClientRect() // 返回元素的大小及其相对于视口的位置
-          const x = rect.left - 32
-          const y = -(window.innerHeight - rect.top - 22)
+		  // console.log('检测小球：', ball)
+          // const rect = ball.el.getBoundingClientRect() // 返回元素的大小及其相对于视口的位置
+		  const rect = ball.el
+          //const x = rect.left - 32
+          //const y = -(window.innerHeight - rect.top - 22)
+		  const x = rect.x - 42
+		  const y = -(window.innerHeight - rect.y - 22)
           el.style.display = ''
           el.style.webkitTransform = `translate3d(0,${y}px,0)`
           el.style.transform = `translate3d(0,${y}px,0)`

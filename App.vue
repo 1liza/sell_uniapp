@@ -15,4 +15,6 @@
 <style>
 	/*每个页面公共css */
 	@import url('./static/css/reset.css');
+    @import url('./static/stylus/iconfont.css');
+    /* @import url('./static/stylus/mixin.styl'); */
 </style>

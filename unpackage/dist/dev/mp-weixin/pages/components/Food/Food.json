@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cartcontrol": "/pages/components/Cartcontrol/Cartcontrol",
+    "rattingselect": "/pages/components/Rattingselect/Rattingselect",
+    "split": "/pages/components/Split/split"
+  }
+}

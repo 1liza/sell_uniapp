@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/components/index",
+    "pages/components/Sellers/Sellers",
+    "pages/components/Goods/Goods",
+    "pages/components/Rattings/Rattings"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小怪商店",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

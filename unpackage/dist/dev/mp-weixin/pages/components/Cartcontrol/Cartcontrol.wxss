@@ -1,0 +1,54 @@
+.cartcontrol {
+  font-size: 0;
+}
+.cartcontrol .cart-decrease {
+  display: inline-block;
+  padding: 6px;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.cartcontrol .cart-decrease .iconsub {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 20px;
+  color: #00a0dc;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.cartcontrol .cart-decrease.move-enter-active,
+.cartcontrol .cart-decrease.move-leave-active {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.cartcontrol .cart-decrease.move-enter,
+.cartcontrol .cart-decrease.move-leave-to {
+  opacity: 0;
+  -webkit-transform: translate3d(24px, 0, 0);
+          transform: translate3d(24px, 0, 0);
+}
+.cartcontrol .cart-decrease.move-enter .iconsub,
+.cartcontrol .cart-decrease.move-leave-to .iconsub {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.cartcontrol .cart-num {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  padding-top: 10px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 10px;
+  color: #93999f;
+}
+.cartcontrol .iconadd {
+  display: inline-block;
+  padding: 6px;
+  line-height: 24px;
+  font-size: 22px;
+  color: #00a0dc;
+}
+

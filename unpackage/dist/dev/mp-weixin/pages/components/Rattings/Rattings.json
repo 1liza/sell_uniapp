@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rattingselect": "/pages/components/Rattingselect/Rattingselect",
+    "split": "/pages/components/Split/split",
+    "star": "/pages/components/Star/Star"
+  }
+}

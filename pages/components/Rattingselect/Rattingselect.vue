@@ -32,9 +32,7 @@ export default {
   },
   methods: {
     select (type, event) {
-      if (event._constructed) {
         this.$emit('select', type)
-      }
     },
     toggleContent () {
       if (event._constructed) {

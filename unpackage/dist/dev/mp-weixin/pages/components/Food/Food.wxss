@@ -1,0 +1,160 @@
+@imoprt '../../common/stylus/mixin.styl';
+.good {
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 48px;
+  width: 100%;
+  background: #fff;
+  color: #93999f;
+  font-size: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.good.move-enter-active,
+.good.move-leave-active {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.good.move-enter,
+.good.move-leave-to {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.good .title .title-pic {
+  position: relative;
+}
+.good .title .title-pic ._img {
+  height: 375px;
+  width: 100%;
+  object-fit: cover;
+}
+.good .title .title-pic .goback {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 4px;
+  font-size: 24px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+.good .title .title-content {
+  padding: 18px;
+  position: relative;
+}
+.good .title .title-content .title-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #07111b;
+}
+.good .title .title-content .title-sell {
+  margin: 8px 0 18px 0;
+}
+.good .title .title-content .title-sell .sell-num,
+.good .title .title-content .title-sell .sell-ratting {
+  padding-right: 12px;
+  font-size: 10px;
+  line-height: 10px;
+}
+.good .title .title-content .buy-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f01414;
+}
+.good .title .title-content .buy-add {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  font-size: 10px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: #fff;
+  background: #00a0dc;
+}
+.good .title .title-content .cartcontrol-wrapper {
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+}
+.good .introduce {
+  padding: 18px;
+}
+.good .introduce .intro-title {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #07111b;
+  padding-bottom: 6px;
+}
+.good .introduce .intro-content {
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 20px;
+}
+.good .comment {
+  color: #07111b;
+  padding-top: 18px;
+}
+.good .comment .comment-head {
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #07111b;
+}
+.good .comment .ratting-wrapper {
+  padding: 0 18px;
+}
+.good .comment .ratting-wrapper .rating-item {
+  padding: 16px 0;
+  box-sizing: border-box;
+  position: relative;
+  height: 70px;
+  border-bottom: 1px solid rgba(7,17,27,0.1);
+}
+.good .comment .ratting-wrapper .rating-item:last-child {
+  border: none;
+}
+.good .comment .ratting-wrapper .rating-item .user {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+.good .comment .ratting-wrapper .rating-item .user .name {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 12px;
+  padding-right: 6px;
+}
+.good .comment .ratting-wrapper .rating-item .user .avatar {
+  width: 12px;
+  height: 12px;
+  vertical-align: top;
+}
+.good .comment .ratting-wrapper .rating-item .time {
+  font-size: 10px;
+  line-height: 12px;
+}
+.good .comment .ratting-wrapper .rating-item .content {
+  margin-top: 6px;
+}
+.good .comment .ratting-wrapper .rating-item .content .thumb {
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 4px;
+}
+.good .comment .ratting-wrapper .rating-item .content .text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.good .comment .no-ratting {
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #07111b;
+}
+

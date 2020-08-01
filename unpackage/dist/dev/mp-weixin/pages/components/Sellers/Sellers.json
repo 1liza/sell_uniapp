@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "split": "/pages/components/Split/split",
+    "star": "/pages/components/Star/Star"
+  }
+}

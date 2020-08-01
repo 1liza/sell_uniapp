@@ -157,10 +157,8 @@ export default {
       }
     },
     toggleFavorite (event) {
-      if (event._constructed) {
         this.favorite = !this.favorite
         saveToLocal(this.seller.id, 'favorite', this.favorite)
-      }
     }
   }
 }
