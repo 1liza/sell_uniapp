@@ -72,28 +72,29 @@ import split from '../Split/split'
 import star from '../../components/Star/Star'
 import BScroll from 'better-scroll'
 import { loadFromLocal, saveToLocal } from '../../common/js/store.js'
+
 export default {
-  // props: {
-  //   seller: {
-  //     type: Object
-  //   }
-  // },
-  onLoad:function(){
-			uni.showLoading({
-				title:"加载中...."
-			})
-			uni.request({
-				url: 'http://39.97.183.117:8900/api/seller',
-				method: 'GET',
-				data: {},
-				success: res => {
-					this.news = res.data;
-					uni.hideLoading();
-				},
-				fail: () => {console.log('Cannot get seller data')},
-				complete: () => {}
-			})
-	},
+  props: {
+    seller: {
+      type: Object
+    }
+  },
+ //  onLoad:function(){
+	// 		uni.showLoading({
+	// 			title:"加载中...."
+	// 		})
+	// 		uni.request({
+	// 			url: 'http://39.97.183.117:8900/api/seller',
+	// 			method: 'GET',
+	// 			data: {},
+	// 			success: res => {
+	// 				this.news = res.data;
+	// 				uni.hideLoading();
+	// 			},
+	// 			fail: () => {console.log('Cannot get seller data')},
+	// 			complete: () => {}
+	// 		})
+	// },
   components: {
     split,
     star
@@ -102,10 +103,7 @@ export default {
     return {
       favorite: (() => {
         return loadFromLocal(this.seller.id, 'favorite', false)
-      })(),
-      seller:{
-        type:Object
-      }
+      })()
     }
   },
   created () {

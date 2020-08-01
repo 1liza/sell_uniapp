@@ -1,33 +1,21 @@
 {
 	"pages": [ 
 		{
-			"path": "pages/components/index",
-			"style": {
-				"navigationBarTitleText": "index"
-			}
+			"path": "pages/components/index"
 		},
 		{
-			"path": "pages/components/Sellers/Sellers",
-			"style": {
-				"navigationBarTitleText": "Seller"
-			}
+			"path": "pages/components/Sellers/Sellers"
 		},
 		{
-			"path": "pages/components/Goods/Goods",
-			"style": {
-				"navigationBarTitleText": "Goods"
-			}
+			"path": "pages/components/Goods/Goods"
 		},
 		{
-			"path": "pages/components/Rattings/Rattings",
-			"style": {
-				"navigationBarTitleText": "Rattings"
-			}
+			"path": "pages/components/Rattings/Rattings"
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "小怪商店",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

@@ -55,23 +55,26 @@ export default {
       type: Object
     }
   },
+	onLoad() {
+		console.log(this.$Route); //这时你可以看到你在routes中所匹配的路由项
+	},
   components: {
     cart,
     food,
     cartcontrol
   },
   created () {
+    console.log('seller:',this.seller)
     this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
 
-    const url = debug ? 'http://39.97.183.117:8900/api/goods' : '/api/goods'
-    console.log(url)
+    const url = debug ? '/api/goods' : '/api/goods'
     // $http.get(this.url)
     this.$http.get(url).then((response) => {
       // console.log('get成功')
       response = response.body
       if (response.errno === ERR_OK) {
         this.goods = response.data
-        // console.log(this.goods)
+        // console.log('goods:',this.goods)
         this.$nextTick(() => {
           this._initScroll()
           this._calculateHeight()
@@ -140,7 +143,6 @@ export default {
           this.scrollY = Math.abs(Math.round(pos.y))
         }
       })
-      console.log('初始化成功')
     },
     _calculateHeight () {
       const foodList = this.$refs.foodList
@@ -176,6 +178,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
